@@ -18,4 +18,4 @@ plot_utils.show_plot()
 Example output:
 ![alt text](https://github.com/andraugust/spacenet-utils/blob/master/example_output.png?raw=true)
 
-Dependencies: numpy, pandas, osgeo, matplotlib, geomet
+Dependencies: numpy, pandas, osgeo, matplotlib, geomet.

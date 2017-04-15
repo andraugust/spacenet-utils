@@ -7,6 +7,9 @@ from matplotlib.collections import PatchCollection
 from geomet import wkt
 
 
+fig, ax = plt.subplots()
+
+
 def plot_image(im_path,band=1):
     '''
     Add satellite image to global ax object.
@@ -50,23 +53,13 @@ def plot_gt(im_id,csv_path):
     p = PatchCollection(patches, alpha=0.4)
     ax.add_collection(p)
 
+def show_plot():
+    plt.show()
 
 ######################################################################
-# total number of Khartoum photos is 1686
+# Khartoum notes:
 # Images are 650 x 650
 # Image types are one of PAN (1 band), RGB (3 bands), MUL (8 bands)
 
-# TODO: some integers aren't in the dataset
-# TODO: some images don't have any polygons (e.g. 231)
-im_id = '538'       # id of image to plot
-photo_type = 'PAN'
-csv_path =          # path to csv file of building geometries
-im_path =           # path to image file to plot
-
-# plot
-fig, ax = plt.subplots()
-plot_image(im_path,band=1)
-plot_gt(im_id,csv_path)
-plt.xlim((0,650))
-plt.ylim((0,650))
-plt.show()
+# TODO: some im_ids aren't in the dataset e.g. 6
+# TODO: some images don't have any polygons e.g. 231

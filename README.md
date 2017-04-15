@@ -16,4 +16,4 @@ plot_utils.show_plot()
 ```
 
 Example output:
-!(https://github.com/andraugust/spacenet-utils/blob/master/example_output.png?raw=true)
+![alt text](https://github.com/andraugust/spacenet-utils/blob/master/example_output.png?raw=true)

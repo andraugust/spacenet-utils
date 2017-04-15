@@ -58,19 +58,10 @@ def plot_gt(im_id,csv_path):
 
 # TODO: some integers aren't in the dataset
 # TODO: some images don't have any polygons (e.g. 231)
-im_id = '538'
+im_id = '538'       # id of image to plot
 photo_type = 'PAN'
-csv_path = '/Users/andrew/DataMining/Proj/data/AOI_5_Khartoum_Train/summaryData/AOI_5_Khartoum_Train_Building_Solutions.csv'
-
-
-# construct image path from image id
-root_path = '/Users/andrew/DataMining/Proj/data/AOI_5_Khartoum_Train/'
-if photo_type=='PAN':
-    im_path =  root_path + 'PAN/PAN_AOI_5_Khartoum_img' + im_id + '.tif'
-elif photo_type=='RGB':
-    im_path = root_path + 'RGB-PanSharpen/RGB-PanSharpen_AOI_5_Khartoum_img' + im_id + '.tif'
-elif photo_type=='MUL':
-    im_path = root_path + 'MUL-PanSharpen/MUL-PanSharpen_AOI_5_Khartoum_img' + im_id + '.tif'
+csv_path =          # path to csv file of building geometries
+im_path =           # path to image file to plot
 
 # plot
 fig, ax = plt.subplots()

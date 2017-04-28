@@ -1,4 +1,4 @@
-# spacenet_utils
+# spacenet-utils
 Utilities for modeling and visualizing SpaceNet data.
 #
 Example usage:

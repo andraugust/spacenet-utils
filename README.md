@@ -1,6 +1,6 @@
-## spacenet-utils
-# Utilities for modeling and visualizing data from the SpaceNet challenge ().
-
+# spacenet-utils
+Utilities for modeling and visualizing data from the SpaceNet challenge ().
+#
 Example usage:
 
 ```python

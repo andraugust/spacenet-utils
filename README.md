@@ -1,5 +1,5 @@
-# spacenet-utils
-Utilities for visualizing spacenet data.
+## spacenet-utils
+# Utilities for modeling and visualizing data from the SpaceNet challenge ().
 
 Example usage:
 

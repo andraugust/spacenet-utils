@@ -1,8 +1,7 @@
 # spacenet-utils
 Utilities for modeling and visualizing [SpaceNet](https://crowdsourcing.topcoder.com/spacenet) data.
 #
-### Example usage:
-Display geotiff image with building-polygon overlay:
+### Example: Display geotiff image with building-polygon overlay.
 
 ```python
 import spacenet_utils as snu
@@ -17,6 +16,12 @@ snu.plot_gt(ax,im_path,csv_path)
 plt.show()
 ```
 ![alt text](https://github.com/andraugust/spacenet-utils/blob/master/example1.png?raw=true)
+
+### Example: Label pixels as building or not-building using kNN.
+```bash
+python example_knn.py
+```
+![alt text](https://github.com/andraugust/spacenet-utils/blob/master/example2.png?raw=true)
 
 
 Dependencies: numpy, pandas, osgeo, matplotlib, geomet.

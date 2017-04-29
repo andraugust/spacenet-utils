@@ -10,7 +10,7 @@ np.random.seed(3)
 
 verbose = True
 w = 650     # image width and height
-ntr = 14     # number of train images
+ntr = 18     # number of train images
 nte = 1     # number of test images
 
 

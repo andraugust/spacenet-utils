@@ -19,7 +19,7 @@ plt.show()
 
 ### Example: Label pixels as building or not-building using kNN.
 ```bash
-python example_knn.py
+$ python example_knn.py
 ```
 ![alt text](https://github.com/andraugust/spacenet-utils/blob/master/example2.png?raw=true)
 

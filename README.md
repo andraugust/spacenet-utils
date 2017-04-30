@@ -22,7 +22,7 @@ plt.show()
 <center><img src="https://github.com/andraugust/spacenet-utils/blob/master/example1.png?raw=true" width="50%"></center>
 
 ### Example usage
-Label pixels using kNN model.
+Label buildings using kNN on the pixel spectra.
 ```bash
 $ python example_knn.py
 ```

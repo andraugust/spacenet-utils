@@ -9,7 +9,6 @@ np.random.seed(3)
 
 
 verbose = True
-w = 650     # image width and height
 ntr = 18     # number of train images
 nte = 1     # number of test images
 
@@ -58,6 +57,7 @@ fig, (ax1,ax2) = plt.subplots(1,2)
 snu.plot_image(ax1,te_paths[0])
 snu.plot_gt(ax1,te_paths[0],summeryData_path)
 # predictions
+w = 650     # image width and height
 yMf2d = yMf[0:w*w].reshape((w,w))
 snu.plot_predictions(ax2,yMf2d)
 snu.plot_gt(ax2,te_paths[0],summeryData_path)

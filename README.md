@@ -19,7 +19,7 @@ snu.plot_image(ax,im_path,band=7)
 snu.plot_gt(ax,im_path,csv_path)
 plt.show()
 ```
-![alt text](https://github.com/andraugust/spacenet-utils/blob/master/example1.png?raw=true)
+<center><img src="https://github.com/andraugust/spacenet-utils/blob/master/example1.png?raw=true" width="50%"></center>
 
 ### Example
 Label pixels as building or not-building using kNN.

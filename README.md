@@ -27,8 +27,16 @@ Label pixels using kNN model.
 $ python example_knn.py
 ```
 ![alt text](https://github.com/andraugust/spacenet-utils/blob/master/example2.png?raw=true)
+```bash
+performance = 0.799041
+confusion matrix = 
+array([[288411,  13766],
+       [ 71139,  49184]])
+fscore = 0.536729360026
+```
+
 
 ### Note
 example_knn.py has only been tested on MUL-PanSharpened images from the Khartoum region.
 
-To use on a different region, or different image type, be sure to set the following in spacenet_utils.py: poly_verts2mask.w, postprocess.w, get_poly_arr.im_id_prefix, and plot_gt.im_id_prefix.
+To use on a different region or image type, be sure to set the following in spacenet_utils.py: poly_verts2mask.w, postprocess.w, get_poly_arr.im_id_prefix, and plot_gt.im_id_prefix.  See functions for documentation.

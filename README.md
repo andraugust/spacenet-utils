@@ -41,4 +41,4 @@ fscore = 0.536729360026
 
 To use on a different region or image type, be sure to set the following kwargs in `spacenet_utils.py`: `poly_verts2mask.w`, `postprocess.w`, `get_poly_arr.im_id_prefix`, `plot_gt.im_id_prefix`.
 
-See these functions for further documentation.
+See these functions' docstrings for further documentation.

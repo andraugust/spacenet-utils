@@ -28,4 +28,7 @@ $ python example_knn.py
 ```
 ![alt text](https://github.com/andraugust/spacenet-utils/blob/master/example2.png?raw=true)
 
+### Note
+example_knn.py has only been tested on MUL-PanSharpened images from the Khartoum region.
 
+To use on a different region, or different image type, be sure to set the following in spacenet_utils.py: poly_verts2mask.w, postprocess.w, get_poly_arr.im_id_prefix, and plot_gt.im_id_prefix.

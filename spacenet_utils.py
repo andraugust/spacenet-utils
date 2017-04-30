@@ -174,12 +174,12 @@ def im_path2id(im_path):
     return re.search(r'img(\d*).tif',im_path).group(1)
 
 
-def postprocess(y):
+def postprocess(y, w=650):
     '''
     :param y: Nx1 array of binary model output.  Multiple images are concatenated.
+    :param w: image width and height.  assumed the same for all images.
     :return: Nx1 array of filtered output.
     '''
-    w = 650         # assumes all images have same width = height
     # convert y to a list of 2d arrays
     nte = int(len(y)/(w*w))       # number of testing images
     y2ds = []                     # will be w x w x nte

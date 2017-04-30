@@ -11,8 +11,7 @@ import re
 
 def make_dataset(kind='test', im_paths=None, summeryData_path=None):
     '''
-    Requires all images to have same number of color bands n_bands.
-    :param kind: 'test' or 'train'.  if 'train', then empty (black) pixels are removed.
+    :param kind: 'test' or 'train'.  if 'train', then empty (black) pixels are removed so that kNN is more efficient.
     :param im_paths: list of string paths to geotiff files.
     :param summeryData_path: string path to csv polygon data.  downloads from aws as, e.g., summeryData/AOI_5_Khartoum_Train_Building_Solutions.csv
     :return: nparray of spectra for each pixel in all images in im_paths. shape is w*w*len(im_paths) x n_bands

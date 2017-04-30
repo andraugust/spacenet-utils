@@ -9,7 +9,7 @@ import re
 
 
 
-def make_dataset(kind='test', im_paths=None, summeryData_path=None, n_bands=8):
+def make_dataset(kind='test', im_paths=None, summeryData_path=None):
     '''
     Requires all images to have same number of color bands n_bands.
     :param kind: 'test' or 'train'.  if 'train', then empty (black) pixels are removed.
@@ -17,12 +17,15 @@ def make_dataset(kind='test', im_paths=None, summeryData_path=None, n_bands=8):
     :param summeryData_path: string path to csv polygon data.  downloads from aws as, e.g., summeryData/AOI_5_Khartoum_Train_Building_Solutions.csv
     :return: nparray of spectra for each pixel in all images in im_paths. shape is w*w*len(im_paths) x n_bands
     '''
-    Xacc = np.empty((0,n_bands))
+    Xacc = None
     yacc = np.array([])
     for im_path in im_paths:
         # get image pixel array
         X = geotiff2array(im_path)
         w = X.shape[0]              # image width = height
+        if Xacc is None:
+            n_bands = X.shape[2]
+            Xacc = np.empty((0,n_bands))
         ## process polygons
         poly_verts = get_poly_arr(im_path2id(im_path), summeryData_path)
         if not poly_verts:

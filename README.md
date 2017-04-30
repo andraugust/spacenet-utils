@@ -21,8 +21,8 @@ plt.show()
 ```
 <center><img src="https://github.com/andraugust/spacenet-utils/blob/master/example1.png?raw=true" width="50%"></center>
 
-### Example
-Label pixels as building or not-building using kNN.
+### Example usage
+Label pixels using kNN model.
 ```bash
 $ python example_knn.py
 ```

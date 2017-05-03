@@ -46,6 +46,7 @@ def make_dataset(kind='test', im_paths=None, summeryData_path=None):
 
 def poly_verts2mask(poly_verts,w=650):
     '''
+    convert polygon vertices to ground-truth mask
     :param poly_verts: array of polygon vertices in units of pixels.  each element is an array of the x,y pixel locations.
     :return: w x w binary nparray of ground-truth building pixels. 1 is building, 0 is not-building.
     '''

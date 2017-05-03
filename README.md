@@ -13,7 +13,9 @@ Display geotiff image with building-polygon overlay.
 import spacenet_utils as snu
 import matplotlib.pyplot as plt
 
+# path to csv of ground-truth polygon vertices
 csv_path = 'AOI_5_Khartoum_Train/summaryData/AOI_5_Khartoum_Train_Building_Solutions.csv'
+# path to geotiff image
 im_path = 'AOI_5_Khartoum_Train/MUL-PanSharpen/MUL-PanSharpen_AOI_5_Khartoum_img5.tif'
 
 fig, ax = plt.subplots()

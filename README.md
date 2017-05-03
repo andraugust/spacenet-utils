@@ -3,7 +3,7 @@ Utilities for modeling and visualizing [SpaceNet](https://crowdsourcing.topcoder
 
 SpaceNet data is available on [aws](https://aws.amazon.com/public-datasets/spacenet/).
 
-Dependencies: [numpy](http://www.numpy.org/), [pandas](http://pandas.pydata.org/), [osgeo](https://pypi.python.org/pypi/GDAL), [matplotlib](https://matplotlib.org/), [geomet](https://github.com/geomet/geomet), [scikit-learn](http://scikit-learn.org/stable/).
+spacenet-utils dependencies: [numpy](http://www.numpy.org/), [pandas](http://pandas.pydata.org/), [osgeo](https://pypi.python.org/pypi/GDAL), [matplotlib](https://matplotlib.org/), [geomet](https://github.com/geomet/geomet), [scikit-learn](http://scikit-learn.org/stable/).
 
 ### Example usage
 Display geotiff image with building-polygon overlay.

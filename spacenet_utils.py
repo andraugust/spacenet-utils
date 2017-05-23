@@ -62,7 +62,7 @@ def geotiff2array(im_path):
     '''
     Convert a geotiff image to array of pixel intensities.
     :param im_path: Path to a geotiff image.
-    :return: array of pixel intensities. w x w x n_bands
+    :return: array of pixel intensities. w x h x n_bands
     '''
     imobj = gdal.Open(im_path)
     # extract bands
